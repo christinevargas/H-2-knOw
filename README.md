@@ -1,68 +1,43 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# H | 2 | knOw
 
-## Available Scripts
+Know exactly when to water your plants and become the best plant parent with this visual schedule. 
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+The following instructions will provide a copy of H|2|knOw and ready it for launch on a local machine for development purposes.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Prerequisites
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Run
 
-### `npm test`
+```
+npm install
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+```
+npm start
 
-### `npm run build`
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Navigate to http://localhost:3000/ on a browser to view H|2|knOw.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Additional Features Coming Soon!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To make this application even more awesome, I would like to add an "Add A Plant" feature. Users would be able to add new plants to the schedule and continue to see their plant family grow! Additionally, I would create "Edit A Plant" and "Remove A Plant" features so users can view the most accurate information. In order to incorporate the full functionality of a CRUD application, I will build out the backend with a relational database, as the data is currently hardcoded. <br />
 
-### `npm run eject`
+Currently, Fullcalendar.io does not support the creation of bi-weekly events. In order to implement bi-weekly events into this application, I had to hardcode multiple same events with different dates. I am aware that this is not efficient and will spend more time determining a better way of scheduling events in the application. This will mostly likely be accounted for in my models/backend. <br />
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Additionally, to ensure that I am producing quality code, I will add unit tests. Unit tests will add accountability and provide documentation. <br />
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Lastly, I am working on deploying the application with Heroku. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Known Issues
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Currently, there aren't any known issues with this application. However, if a bug is found, please notify the author. 
 
-## Learn More
+### Built With
+React.js <br />
+FullCalendar.io
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Author
+[Christine Vargas](https://github.com/christinevargas)
