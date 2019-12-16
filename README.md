@@ -27,6 +27,8 @@ To make this application even more awesome, I would like to add an "Add A Plant"
 
 Currently, Fullcalendar.io does not support the creation of bi-weekly events. In order to implement bi-weekly events into this application, I had to hardcode multiple same events with different dates. I am aware that this is not efficient and will spend more time determining a better way of scheduling events in the application. This will mostly likely be accounted for in my models/backend. <br />
 
+Additionally, to ensure that I am producing quality code, I will add unit tests. Unit tests will add accountability and provide documentation. <br />
+
 Lastly, I am working on deploying the application with Heroku. 
 
 ### Known Issues
