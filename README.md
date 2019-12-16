@@ -34,7 +34,8 @@ Lastly, I am working on deploying the application with Heroku.
 Currently, there aren't any known issues with this application. However, if a bug is found, please notify the author. 
 
 ### Built With
-React.js & FullCalendar.io
+React.js <br />
+FullCalendar.io
 
 ## Author
 [Christine Vargas](https://github.com/christinevargas)
