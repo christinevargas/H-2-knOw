@@ -22,8 +22,7 @@ npm start
 Navigate to http://localhost:3000/ on a browser to view H|2|knOw.
 
 ### Built With
-React.js
-FullCalendar.io
+React.js & FullCalendar.io
 
 ## Author
 [Christine Vargas](https://github.com/christinevargas)
