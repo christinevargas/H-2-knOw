@@ -1,6 +1,6 @@
 # H | 2 | knOw
 
-Know exactly when to water your plants and become the best plant parent.
+Know exactly when to water your plants and become the best plant parent with this visual schedule. 
 
 ## Getting Started
 
