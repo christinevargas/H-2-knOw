@@ -72,7 +72,11 @@ export default function AllPlants() {
       <h3 className="all-plants-header">All Plants</h3>
       <div className="card-container">
         {allPlants.map(plant => (
-          <Card className="individual-card" style={{ width: "10rem" }}>
+          <Card
+            className="individual-card"
+            key={plant.name}
+            style={{ width: "10rem" }}
+          >
             <Card.Img className="card-img-top" variant="top" src={plant.img} />
             <Card.Body>
               <Card.Title className="plant-name">{plant.name}</Card.Title>

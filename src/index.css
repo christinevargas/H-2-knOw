@@ -13,24 +13,29 @@ code {
 }
 
 /* CALENDAR */
-.calendar-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: #b3e6cc;
-}
 
-.react-calendar.calendar {
-  width: 500px;
-  padding: 20px;
-  background-color: #ebf9f2;
-}
-
-.react-calendar__navigation__label {
-  font-size: 30px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+h2 {
   color: #339966;
+}
+
+.fc-today {
+  background-color: #b3e6cc !important;
+}
+
+.fc.fc-ltr.fc-unthemed {
+  margin: 20px;
+}
+
+.fc-today-button.fc-button.fc-button-primary {
+  background: #339966;
+}
+
+.fc-prev-button.fc-button.fc-button-primary {
+  background: #339966;
+}
+
+.fc-next-button.fc-button.fc-button-primary {
+  background: #339966;
 }
 
 abbr {
@@ -74,7 +79,7 @@ abbr {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #339966;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .card-container {

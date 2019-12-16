@@ -1,42 +1,84 @@
-import React, { Component } from "react";
-import Calendar from "react-calendar";
 import AllPlants from "./AllPlants";
-import { Jumbotron, Container } from "react-bootstrap";
+import Header from "./Header";
+import React from "react";
+import FullCalendar from "@fullcalendar/react";
+import dayGridPlugin from "@fullcalendar/daygrid";
+import "../main.scss";
 
-export default class CalendarComponent extends Component {
-  state = {
-    date: new Date()
-  };
+let events = [
+  {
+    title: "Fiddle Leaf Fig",
+    allDay: true,
+    daysOfWeek: [1],
+    startRecur: "2019-12-16",
+    endRecur: "2020-03-10",
+    color: "#339966"
+  },
+  {
+    title: "Bird's Nest Fern",
+    allDay: true,
+    daysOfWeek: [1, 4],
+    startRecur: "2019-12-16",
+    endRecur: "2020-03-13",
+    color: "#339966"
+  },
+  {
+    title: "Croton",
+    allDay: true,
+    daysOfWeek: [1],
+    startRecur: "2019-12-16",
+    endRecur: "2020-03-10",
+    color: "#339966"
+  },
+  {
+    title: "Bell Pepper Plant",
+    allDay: true,
+    daysOfWeek: [1, 4],
+    startRecur: "2019-12-16",
+    endRecur: "2020-03-13",
+    color: "#339966"
+  },
+  {
+    title: "Strawberry Plant",
+    allDay: true,
+    daysOfWeek: [1, 4],
+    startRecur: "2019-12-16",
+    endRecur: "2020-03-13",
+    color: "#339966"
+  },
+  {
+    title: "Spider Plant",
+    allDay: true,
+    daysOfWeek: [1],
+    startRecur: "2019-12-16",
+    endRecur: "2020-03-10",
+    color: "#339966"
+  },
+  {
+    title: "Wavy Fern",
+    allDay: true,
+    daysOfWeek: [1, 3, 5],
+    startRecur: "2019-12-16",
+    endRecur: "2020-03-14",
+    color: "#339966"
+  }
+];
 
-  onChange = date => this.setState({ date });
-
+export default class DemoApp extends React.Component {
   render() {
     return (
       <>
-        <div>
-          <Jumbotron fluid>
-            <Container>
-              <h1 className="site-title">H | 2 | knOw</h1>
-              <p className="site-description">
-                Know exactly when to water your plants and become the best plant
-                parent.
-              </p>
-            </Container>
-          </Jumbotron>
-        </div>
-        <hr />
+        <Header />
         <h1 className="calendar-title">Schedule</h1>
-        <div className="calendar-container">
-          <Calendar
-            className="calendar"
-            onChange={this.onChange}
-            value={this.state.date}
-            calendarType="US"
-          />
-        </div>
-        <div>
-          <AllPlants />
-        </div>
+        <div className="calendar-container"></div>
+        <FullCalendar
+          defaultView="dayGridMonth"
+          plugins={[dayGridPlugin]}
+          weekends={false}
+          events={events}
+        />
+
+        <AllPlants />
       </>
     );
   }
